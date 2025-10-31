@@ -137,4 +137,17 @@ License
 
 Apache-2.0
 
+Releases via GitHub Actions
+
+- Tag a version and push the tag; the release workflow builds artifacts for
+  Linux and macOS (amd64/arm64) and publishes a release with tarballs and
+  checksums.
+
+```bash
+git tag v0.1.1
+git push origin v0.1.1
+```
+
+The workflow is defined at `.github/workflows/release.yml`.
+
 
